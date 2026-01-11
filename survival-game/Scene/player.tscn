@@ -1,6 +1,5 @@
-[gd_scene load_steps=68 format=3 uid="uid://2m2d2meh2jet"]
+[gd_scene load_steps=67 format=3 uid="uid://2m2d2meh2jet"]
 
-[ext_resource type="Script" uid="uid://j2bllomhxobp" path="res://Script/player.gd" id="1_y8w33"]
 [ext_resource type="Texture2D" uid="uid://el5pn1gjwpfw" path="res://Art/Charactor-art/Archer-Green.png" id="2_xa75v"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_58ae2"]
@@ -541,12 +540,12 @@ animations = [{
 radius = 5.0
 
 [node name="player" type="CharacterBody2D"]
-script = ExtResource("1_y8w33")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_5oeka")
-animation = &"idle"
-frame_progress = 0.9073633
+animation = &"death"
+frame = 4
+frame_progress = 1.0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 3)

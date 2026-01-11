@@ -14,7 +14,7 @@ func _physics_process(delta):
 	move_and_slide()
 	
 	play_anim(direction)
-
+	
 func play_anim(dir):
 	if player_state == "idle":
 		$AnimatedSprite2D.play("idle")
@@ -27,4 +27,16 @@ func play_anim(dir):
 			$AnimatedSprite2D.play("s-walk")
 		if dir.x == -1:
 			$AnimatedSprite2D.play("w-walk")
+		
+		if dir.x > 0.5 and dir.y < -0.5:
+			$AnimatedSprite2D.play("ne-walk")
+		if dir.x > 0.5 and dir.y > 0.5:
+			$AnimatedSprite2D.play("se-walk")
+		if dir.x < -0.5 and dir.y > 0.5:
+			$AnimatedSprite2D.play("sw-walk")
+		if dir.x < -0.5 and dir.y < -0.5:
+			$AnimatedSprite2D.play("nwsddsssdsds-atk")
+
+func player():
+	pass
 		
