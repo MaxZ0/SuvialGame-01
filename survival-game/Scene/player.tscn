@@ -543,9 +543,8 @@ radius = 5.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_5oeka")
-animation = &"death"
-frame = 4
-frame_progress = 1.0
+animation = &"idle"
+frame_progress = 0.688131
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 3)
